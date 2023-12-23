@@ -7,3 +7,21 @@
 body {
   font-family: roboto, sans-serif;
 }
+
+.main-content {
+  max-width: 800px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profit-chart {
+  width: 100%;
+}
+
+.profit-chart canvas {
+  width: 100%;
+  height: auto;
+}
