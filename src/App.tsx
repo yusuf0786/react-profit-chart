@@ -39,8 +39,9 @@ function companyIdWiseData(data2020_WithCompanyId: any) {
 
     // setting data according to there respective material name
     var mapData_dataCompanyIDWise = Object.keys(dataCompanyIDWise)
-    for(let [index, data] of data2020_WithCompanyId.entries()){
-        mapData_dataCompanyIDWise.map((d, i) => {
+    // for(let [index, data] of data2020_WithCompanyId.entries()){
+    for(let data of data2020_WithCompanyId){
+        mapData_dataCompanyIDWise.map((d) => {
             if(data.COMPANYID === d) {
                 dataCompanyIDWise[`${d}`].push(data)
             }
