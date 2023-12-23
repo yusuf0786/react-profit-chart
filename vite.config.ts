@@ -5,8 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   esbuild: {
-    jsxFactory: 'React.createElement',
-    jsxFragment: 'React.Fragment',
-    target: 'ES2021', // Set the target environment explicitly
+    supported: {
+      'top-level-await': true
+    },
+  },
+  build: {
+    target: 'ES2021',
   },
 })
