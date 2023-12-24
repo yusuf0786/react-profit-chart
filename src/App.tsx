@@ -222,7 +222,7 @@ function App() {
               </Select>
           </FormControl>
           <div className="profit-chart">
-            <Barchart chartData={chartData} chartOptions={{scales:{y:{ beginAtZero: true }}}}/>
+            <Barchart chartData={chartData} chartOptions={{scales:{y:{beginAtZero: true, grid:{ display: false }}, x:{beginAtZero: true, grid:{ display: false }}}}}/>
           </div>
         </div>
       </ThemeProvider>
